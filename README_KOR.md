@@ -15,15 +15,15 @@ Frameworks: Spring Boot (백엔드), NextJS (프론트엔드), AWS (MySQL RDS, A
 
 StoryTracks는 하나의 프로젝트를 세 개의 모듈형 리포지토리로 나누어 구성되어 있습니다:
 
-- **[StoryTracks-fe](https://github.com/T4-StoryTracks/fe)**  
+- **[StoryTracks-fe](https://github.com/julsweonCodes/StoryTracks-fe)**  
   **Next.js 기반의 프론트엔드**  
   사용자 인터페이스, 페이지 라우팅, Google Maps API 및 Gemini API 연동을 담당합니다.
 
-- **[StoryTracks-be](https://github.com/T4-StoryTracks/be)**  
+- **[StoryTracks-be](https://github.com/julsweonCodes/StoryTracks-be)**  
   **Spring Boot 기반의 백엔드**  
   사용자 인증, 게시물 처리, 핵심 비즈니스 로직을 관리합니다.
 
-- **[StoryTracks-infra](https://github.com/T4-StoryTracks/infra)**  
+- **[StoryTracks-infra](https://github.com/julsweonCodes/StoryTracks-infra)**  
   **인프라 및 배포 설정 리포지토리**  
   AWS 리소스 설정, 데이터베이스 구성, CI/CD 파이프라인 등을 포함합니다.
 
