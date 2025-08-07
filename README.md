@@ -16,7 +16,7 @@ Frameworks: Spring Boot(Backend), NextJS(Frontend), AWS(MySQL RDS, Amazon S3)
 
 ---
 
-### 🧱 Repository Structure  ← 🆕 추가된 섹션
+### 🧱 Repository Structure 
 
 StoryTracks is composed of three modular repositories under the same project umbrella:
 
