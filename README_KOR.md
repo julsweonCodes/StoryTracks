@@ -19,23 +19,11 @@ StoryTracks는 하나의 프로젝트를 세 개의 모듈형 리포지토리로
   **Next.js 기반의 프론트엔드**  
   사용자 인터페이스, 페이지 라우팅, Google Maps API 및 Gemini API 연동을 담당합니다.
 
-- **[StoryTracks-be](https://github.com/julsweonCodes/StoryTracks-be)**  
+- **[StoryTracks-be](https://github.com/julsweonCodes/StoryTracks-be-new)**  
   **Spring Boot 기반의 백엔드**  
   사용자 인증, 게시물 처리, 핵심 비즈니스 로직을 관리합니다.
 
-- **[StoryTracks-infra](https://github.com/julsweonCodes/StoryTracks-infra)**  
-  **인프라 및 배포 설정 리포지토리**  
-  AWS 리소스 설정, 데이터베이스 구성, CI/CD 파이프라인 등을 포함합니다.
-
 이러한 구조는 각 구성 요소를 독립적으로 개발 및 유지보수할 수 있게 하며, 서비스 간의 유기적인 통합을 보장합니다.
-
----
-
-## 🤔💭 아이디어는 어떻게 시작됐을까요?
-
-<img src="/imgs/1.png" width="50%" height="auto">
-<img src="/imgs/2.png" width="50%" height="auto">
-<img src="/imgs/3.png" width="50%" height="auto">
 
 ---
 
