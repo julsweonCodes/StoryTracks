@@ -51,7 +51,7 @@ Frameworks: Spring Boot (백엔드), NextJS (프론트엔드), AWS (Amazon S3), 
 
 ### 🔮 AI 기반 요약 생성하여 게시물 작성
 - 사진 업로드, 대표 이미지의 위치 정보 추가<br>
-<img src="/imgs/new-7.png" width="30%" height="auto"><img src="/imgs/new-5.png" width="30%" height="auto"><img src="/imgs/new-6.png" width="30%" height="auto">
+ <img src="/imgs/new-7.png" width="30%" height="auto"><img src="/imgs/new-5.png" width="30%" height="auto"><img src="/imgs/new-6.png" width="30%" height="auto">
 <br>
 
 - 원하는 글쓰기 스타일 지정하여 Gemini API로 이미지·텍스트 분석 후 요약문 자동 생성<br>
