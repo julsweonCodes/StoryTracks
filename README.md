@@ -33,8 +33,8 @@ Frameworks: Spring Boot (백엔드), NextJS (프론트엔드), AWS (Amazon S3), 
 
 | Repo | Description |
 |------|-------------|
-| **StoryTracks-fe** | Next.js 기반 프론트엔드. UI, 라우팅, Google Maps 및 Gemini API 연동 담당. |
-| **StoryTracks-be** | Spring Boot 기반 백엔드. 인증, 게시물 처리, API 및 비즈니스 로직 제공. |
+| **[StoryTracks-fe](https://github.com/julsweonCodes/StoryTracks-fe)** | Next.js 기반 프론트엔드. UI, 라우팅, Google Maps 및 Gemini API 연동 담당. |
+| **[StoryTracks-be](https://github.com/julsweonCodes/StoryTracks-be-new)** | Spring Boot 기반 백엔드. 인증, 게시물 처리, API 및 비즈니스 로직 제공. |
 
 ---
 ## 🥁 StoryTracks 사용법
