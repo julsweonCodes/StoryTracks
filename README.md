@@ -1,49 +1,108 @@
 # 📦 StoryTracks
 
-StoryTracks는 위치 기반 게시물을 통해 개인의 이야기를 기록하고 공유할 수 있도록 설계된 모바일 중심 웹 애플리케이션입니다.  
-사용자는 사진을 업로드하고, 위치와 시간 같은 메타데이터, 텍스트 또는 음성 입력을 활용해 고유한 게시물을 만들 수 있습니다.
+**StoryTracks는 위치 기반 게시물을 중심으로 개인의 경험을 기록하고 공유할 수 있는 모바일 최적화 웹 애플리케이션입니다.**  
+사용자는 사진을 업로드하고, 위치·시간 정보와 텍스트를 입력하여 자신만의 게시물을 만들 수 있습니다.
 
-또한 Gemini API를 통해 사진을 기반으로 매력적인 콘텐츠를 자동 생성하며,  
-Google Maps API 기반의 지도 피드를 통해 다른 사람들의 게시물을 탐색할 수 있고,  
-로그인/로그아웃과 같은 인증 기능, 반응(좋아요 등) 기능도 포함되어 있습니다.
+Gemini API 기반 AI 요약 생성, Google Maps 기반 지도 피드 탐색,  
+그리고 인증 및 좋아요 기능을 제공하여 풍부한 사용자 경험을 제공합니다.
 
 Frameworks: Spring Boot (백엔드), NextJS (프론트엔드), AWS (Amazon S3), PostgreSQL, Redis
 
----
-
-## 🧱 리포지토리 구조
-
-StoryTracks는 다음과 같이 나누어 구성되어 있습니다:
-
-- **[StoryTracks-fe](https://github.com/julsweonCodes/StoryTracks-fe)**  
-  **Next.js 기반의 프론트엔드**  
-  사용자 인터페이스, 페이지 라우팅, Google Maps API 및 Gemini API 연동을 담당합니다.
-
-- **[StoryTracks-be](https://github.com/julsweonCodes/StoryTracks-be-new)**  
-  **Spring Boot 기반의 백엔드**  
-  사용자 인증, 게시물 처리, 핵심 비즈니스 로직을 관리합니다.\
 
 ---
 
+## 🚀 Tech Stack
+
+**Frontend**
+- Next.js  
+- React  
+- Google Maps API  
+- Gemini API  
+
+**Backend**
+- Spring Boot  
+- Spring Security  
+- JPA / QueryDSL  
+- PostgreSQL  
+- Redis  
+- AWS S3  
+
+---
+
+## 🧱 Repository Structure
+
+| Repo | Description |
+|------|-------------|
+| **StoryTracks-fe** | Next.js 기반 프론트엔드. UI, 라우팅, Google Maps 및 Gemini API 연동 담당. |
+| **StoryTracks-be** | Spring Boot 기반 백엔드. 인증, 게시물 처리, API 및 비즈니스 로직 제공. |
+
+---
 ## 🥁 StoryTracks 사용법
 
-**🗺️📍 내 주변의 게시물을 탐색해보세요!**
-Google Maps API의 마커를 통해 전세계에서 업로드 된 게시물을 찾아보세요
+## ✨ 주요 기능
 
-<img src="/imgs/4.png" width="30%" height="auto"><img src="/imgs/5.png" width="30%" height="auto">
+### 🗺️ 위치 기반 게시물 탐색
+- Google Maps에서 전 세계 사용자의 게시물 탐색<br>
+ <img src="/imgs/new-2.png" width="30%" height="auto"><img src="/imgs/new-1.png" width="30%" height="auto"><img src="/imgs/new-3.png" width="30%" height="auto">
+<br>
+- 지도 마커 클릭 시 해당 지역 게시물 목록 확인<br> 
+  <img src="/imgs/feed-list.png" width="30%" height="auto">
+  <br>
 
+### 🔮 AI 기반 요약 생성하여 게시물 작성
+- 사진 업로드, 대표 이미지의 위치 정보 추가<br>
+<img src="/imgs/new-7.png" width="30%" height="auto"><img src="/imgs/new-5.png" width="30%" height="auto"><img src="/imgs/new-6.png" width="30%" height="auto">
 <br>
 
-**🔮✨ 내가 원하는 스타일로 내가 쓴 블로그글의 AI 요약을 작성해보세요!**
+- 원하는 글쓰기 스타일 지정하여 Gemini API로 이미지·텍스트 분석 후 요약문 자동 생성<br>
+<img src="/imgs/new-8.png" height="400px"><img src="/imgs/new-9.png" height="400px">
+<br>
 
-<img src="/imgs/6.png" width="30%" height="auto"><img src="/imgs/7.png" width="30%" height="auto">
-<br><br>
+### 👤 My Blog
 
-메타데이터가 포함된 사진을 선택하거나 대표 이미지의 위치 정보를 입력하고
+- 작성한 게시물을 한 곳에서 관리  
+- 프로필 및 정보 관리  
+ <img src="/imgs/new-10.png" height="400px"><img src="/imgs/new-11.png" height="400px">
+<br>
 
-<img src="/imgs/8.png" height="400px"><img src="/imgs/9.png" height="400px">
-<br><br>
+---
 
-원하는 블로그 글 스타일을 입력하고 AI 요약을 생성해보세요!
+## 🧩 Architecture Overview
+```
+            ┌───────────────────────┐
+            │     Frontend          │
+            │       (Next.js)       │
+            └────────────┬──────────┘
+                         │
+                         ▼
+            ┌────────────────────────┐
+            │     Backend API        │
+            │      (Spring Boot)     │
+            └────────────┬───────────┘
+                         │
+        ┌────────────────┴────────────────┐
+        │                                 │
+        ▼                                 ▼
+┌──────────────────┐            ┌─────────────────┐
+│   Database       │            │      Cache      │
+│   PostgreSQL     │            │      Redis      │
+└──────────┬───────┘            └─────────┬───────┘
+           │                              │
+           ▼                              │
+┌─────────────────────────┐               │
+│        AWS S3           │               │
+│     (Image Storage)     │               │
+└──────────┬──────────────┘               │
+           │                              │
+           ▼                              ▼
+   ┌────────────────────────────────────────────┐
+   │      External APIs (Google Maps, Gemini)   │
+   └────────────────────────────────────────────┘
+```
 
-<img src="/imgs/10.png" width="25%" height="auto"><img src="/imgs/11.png" width="25%" height="auto"><img src="/imgs/12.png" width="25%" height="auto"><img src="/imgs/13.png" width="25%" height="auto">
+---
+
+## 📌 향후 추가될 기능
+- 댓글 기능
+- 팔로우 기반 피드
+- 모바일 UI 최적화
