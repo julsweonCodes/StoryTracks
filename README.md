@@ -42,17 +42,57 @@ Google Maps 위에서 전 세계 사용자들의 기록을 탐색할 수 있습�
 
 ## ✨ 주요 기능
 
-### 🗺️ 위치 기반 게시물 탐색
+### 🗺️ 위치 기반 게시물 탐색 (메인 피드)
+
+<div>
+  <img src="imgs/main-feed-1.png" width="45%"/>
+  <img src="imgs/main-feed-2.png" width="45%"/>
+</div>
+
 - 지도 위 클러스터링된 게시물 탐색  
+
+<div>
+  <img src="imgs/main-feed-3.png" width="45%"/>
+  <img src="imgs/blog-post-1.png" width="45%"/>
+</div>
+
 - 지역 마커 클릭 시 해당 위치 게시물 리스트 노출
 
-### 🔮 AI 요약 기반 게시물 작성
-- 이미지 메타데이터(위경도/시간) 분석  
-- Gemini API 기반 요약문 자동 생성  
-- 글쓰기 스타일 지정 기능 제공
 
-### 👤 My Blog
-- 작성한 게시물 관리  
+### 🔮 AI 요약 기반 게시물 작성
+
+<div>
+  <img src="imgs/create-post-1.png" width="45%"/>
+  <img src="imgs/create-post-2.png" width="45%"/>
+  </div>
+<div>
+  <img src="imgs/create-post-3.png" width="45%"/>
+  <img src="imgs/create-post-4.png" width="45%"/>
+</div>
+
+<div>
+  <img src="imgs/create-post-5.png" width="45%"/>
+  <img src="imgs/create-post-6.png" width="45%"/>
+</div>
+
+- 이미지 메타데이터(위경도/시간) 분석  
+- 글쓰기 스타일 지정 및 Gemini API 기반 요약문 자동 생성
+
+
+### 👤 User Blog
+
+<div>
+  <img src="imgs/user-blog-1.png" width="45%"/>
+  <img src="imgs/user-blog-2(marker).png" width="45%"/>
+</div>
+
+- 다른 유저의 블로그 구경
+
+<div>
+  <img src="imgs/my-blog-1.png" width="45%"/>
+  <img src="imgs/user-profile-1.png" width="45%"/>
+</div>
+
 - 블로그 정보 및 프로필 관리
 
 ---
@@ -111,5 +151,4 @@ Google Maps 위에서 전 세계 사용자들의 기록을 탐색할 수 있습�
 - 팔로우 기반 추천 피드
 - 모바일 UI 고도화
 - 소셜 공유 기능
-
 
